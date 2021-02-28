@@ -14,6 +14,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Build Hello World
+      run: g++ -static ./src/hello.cpp -o ./src/hello
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag hello-cpp:1234
     - name: Run hello in Docker
