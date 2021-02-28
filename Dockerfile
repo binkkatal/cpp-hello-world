@@ -1,5 +1,5 @@
 FROM scratch
 
-ADD ./src/hello /
+COPY ./src/hello /app/hello
 
-CMD ["/hello"]
+CMD ["/app/hello"]
