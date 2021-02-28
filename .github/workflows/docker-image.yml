@@ -15,6 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag hello-cpp:$(date +%s)
+      run: docker build . --file Dockerfile --tag hello-cpp:1234
     - name: Run hello in Docker
-      run: docker run hello-cpp:$(date +%s)
+      run: docker run hello-cpp:1234
